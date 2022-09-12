@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Alumno } from './modelo/alumno';
+import { Seccion } from './modelo/seccion';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'RegistrAPP';
+
+  public listaAlumno:Array<Alumno>=[
+  ];
+  public listarSeccion:Array<Seccion>=[
+  ];
+
+  public registrarAlumno (nuevo:Alumno):void{
+    this.listaAlumno.push(nuevo);
+  }
+  public registrarSeccion (nuevo:Seccion):void{
+    this.listarSeccion.push(nuevo);
+  }
 }

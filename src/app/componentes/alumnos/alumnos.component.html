@@ -1,0 +1,11 @@
+<fieldset>
+<article>
+  <p>Rut:{{ alumno.rut }}</p>
+  <p>Nombre Completo:{{ alumno.nombre | uppercase }} {{alumno.apellido |lowercase}}</p>
+  <p>Edad: {{ alumno.edad }}</p>
+  <span>Tipo de seccion: {{ alumno.tipo }}</span>
+  <div>
+    <p>Fecha y hora: {{ fecha | date:"HH:mm , dd/MM/yyyy"}}</p>
+  </div>
+</article>
+</fieldset>
